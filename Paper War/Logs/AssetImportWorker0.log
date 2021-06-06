@@ -141,3 +141,4 @@ Received Import Request.
 Start importing Assets/Editor Default Resources/Febucci/HierarchyData.asset using Guid(1219f748194ae97488040ad0fd5b7cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b1ee06dd38bbd3ec59cf9e6acce6183') in 0.004480 seconds
   Import took 0.007629 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
