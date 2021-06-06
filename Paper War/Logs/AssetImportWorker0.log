@@ -1,0 +1,143 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19041.985; Version 2004; 64bit' Language: 'pt' Physical Memory: 16255 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\Program Files\Unity\Hub\Editor\2020.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Games/Unity/Paper-War/Paper War
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53255
+Successfully changed project path to: E:/Games/Unity/Paper-War/Paper War
+E:/Games/Unity/Paper-War/Paper War
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 47.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path E:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Games/Unity/Paper-War/Paper War/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 750 (ID=0x1381)
+    Vendor:   
+    VRAM:     2007 MB
+    Driver:   27.21.14.6627
+Initialize mono
+Mono path[0] = 'E:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56704
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: E:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002468 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 44.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.195 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005777 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.590 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1389 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.3 MB.
+System memory in use after: 68.2 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1822.
+Total: 2.434200 ms (FindLiveObjects: 0.159200 ms CreateObjectMapping: 0.065900 ms MarkObjects: 2.098600 ms  DeleteObjects: 0.108700 ms)
+
+========================================================================
+Received Import Request.
+  path: Packages/com.unity.ide.rider/package.json
+  artifactKey: Guid(66c95bb3c74257f41bae2622511dc02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ide.rider/package.json using Guid(66c95bb3c74257f41bae2622511dc02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff96f7b61e94a0dc9b975679be81ead9') in 0.069691 seconds
+  Import took 0.072476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.616367 seconds.
+  path: Packages/com.febucci.custom-hierarchy/package.json
+  artifactKey: Guid(ca24c8db82dd24f6a8104c8d49da7a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.febucci.custom-hierarchy/package.json using Guid(ca24c8db82dd24f6a8104c8d49da7a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355405f38ddf03af469068a4de2851a7') in 0.006626 seconds
+  Import took 0.011664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.287892 seconds.
+  path: Packages/com.febucci.custom-hierarchy/Editor
+  artifactKey: Guid(eae39af7679d1214c89f593e99718512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.febucci.custom-hierarchy/Editor using Guid(eae39af7679d1214c89f593e99718512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89f1cca98f0533e194676c46be291ad8') in 0.010945 seconds
+  Import took 0.013820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045451 seconds.
+  path: Packages/com.febucci.custom-hierarchy/Editor/Febucci.CustomHierarchy.asmdef
+  artifactKey: Guid(7f14645a05ad66d4fab28b9ad82156ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.febucci.custom-hierarchy/Editor/Febucci.CustomHierarchy.asmdef using Guid(7f14645a05ad66d4fab28b9ad82156ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd63cf4609f353e056ad3d7194171cdf') in 0.011986 seconds
+  Import took 0.014952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.410539 seconds.
+  path: Packages/com.febucci.custom-hierarchy/Editor/HierarchyData.cs
+  artifactKey: Guid(13e4683880117bb40bf96a253db55efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.febucci.custom-hierarchy/Editor/HierarchyData.cs using Guid(13e4683880117bb40bf96a253db55efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfdfdd23a93f61a3cfb57359b0d44f62') in 0.014346 seconds
+  Import took 0.017227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.208066 seconds.
+  path: Packages/com.febucci.custom-hierarchy/README.md
+  artifactKey: Guid(c9e1640fedccc49e79c9e084068de70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.febucci.custom-hierarchy/README.md using Guid(c9e1640fedccc49e79c9e084068de70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600364c367a77e7ccd03c9207154103e') in 0.011952 seconds
+  Import took 0.014871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004088 seconds.
+  path: Packages/com.febucci.custom-hierarchy/README.md
+  artifactKey: Guid(c9e1640fedccc49e79c9e084068de70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.febucci.custom-hierarchy/README.md using Guid(c9e1640fedccc49e79c9e084068de70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600364c367a77e7ccd03c9207154103e') in 0.004062 seconds
+  Import took 0.007017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.654439 seconds.
+  path: Assets/Editor Default Resources/Febucci/HierarchyData.asset
+  artifactKey: Guid(1219f748194ae97488040ad0fd5b7cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor Default Resources/Febucci/HierarchyData.asset using Guid(1219f748194ae97488040ad0fd5b7cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b1ee06dd38bbd3ec59cf9e6acce6183') in 0.018514 seconds
+  Import took 0.022718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001100 seconds.
+  path: Assets/Editor Default Resources/Febucci/HierarchyData.asset
+  artifactKey: Guid(1219f748194ae97488040ad0fd5b7cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor Default Resources/Febucci/HierarchyData.asset using Guid(1219f748194ae97488040ad0fd5b7cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b1ee06dd38bbd3ec59cf9e6acce6183') in 0.004480 seconds
+  Import took 0.007629 seconds .
+
