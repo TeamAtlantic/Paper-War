@@ -7,21 +7,25 @@ public class PlayerController : MonoBehaviour
 
     public Rigidbody rb;
 
-    public float horizontalInput;
-    public float forwardInput;
+    private float horizontalInput;
+    private float forwardInput;
 
-    public float speed;
-    public float turnSpeed;
+    private float speed;
+    private float turnSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        speed = GameObject.Find("Player").GetComponent<PlayerVariables>().playerSpeed;
+        turnSpeed = GameObject.Find("Player").GetComponent<PlayerVariables>().playerTurnSpeed;
+
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
 
