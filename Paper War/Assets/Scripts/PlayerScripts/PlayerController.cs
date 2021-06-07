@@ -13,9 +13,6 @@ public class PlayerController : MonoBehaviour
     private float speed;
     private float turnSpeed;
 
-    private GameObject playerProjectile;
-    private Transform projectileSpawnPoint;
-
     float orientationControl = -1;
 
     
