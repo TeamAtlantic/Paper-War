@@ -1,7 +1,19 @@
 fileFormatVersion: 2
-guid: f70af3ff2ae7416418adf651ffc99731
+guid: 60b1c15db2140394caa27358856d6bff
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -136875135115393289
+    second: nohearts
+  - first:
+      213: 4865496401309793566
+    second: fullhearts
+  - first:
+      213: -1787038614762812984
+    second: twohearts
+  - first:
+      213: -6603167071395835708
+    second: oneheart
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +53,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -101,7 +113,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: nohearts
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1641.75
+        width: 1668
+        height: 547.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f60dd03ac8b91ef0800000000000000
+      internalID: -136875135115393289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullhearts
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1094.75
+        width: 1668
+        height: 547.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1df200d237b58340800000000000000
+      internalID: 4865496401309793566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twohearts
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 547.75
+        width: 1668
+        height: 547.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9082719d92337e0800000000000000
+      internalID: -1787038614762812984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oneheart
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 1668
+        height: 547.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c015ec9886dc54a0800000000000000
+      internalID: -6603167071395835708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

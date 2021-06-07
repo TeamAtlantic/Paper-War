@@ -18,7 +18,10 @@ public class UIScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime * 100;
-        scoreCounter.text = (Mathf.Round(timer)).ToString();
+        if (GameObject.Find("Player").GetComponent<PlayerVariables>().playerHealth >= 1)
+        {
+            timer += Time.deltaTime * 100;
+            scoreCounter.text = (Mathf.Round(timer)).ToString();
+        }
     }
 }

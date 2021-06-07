@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerVariables : MonoBehaviour
 {
 
-    public float playerHealth;
+    public int playerHealth = 3;
     public float playerSpeed;
     public float playerTurnSpeed;
 }
