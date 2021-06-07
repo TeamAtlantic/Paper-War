@@ -8,6 +8,4 @@ public class PlayerVariables : MonoBehaviour
     public float playerHealth;
     public float playerSpeed;
     public float playerTurnSpeed;
-
-
 }

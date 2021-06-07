@@ -13,13 +13,10 @@ public class PlayerLooping : MonoBehaviour
     public int verticalMin;
     public int verticalMax;
 
-    // Start is called before the first frame update
     void Start()
     {
         playerTransform = gameObject.GetComponentInChildren<Transform>();   
     }
-
-    // Update is called once per frame
     void Update()
     {
       if (playerTransform.position.x <= horizontalMin)
