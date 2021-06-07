@@ -758,6 +758,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1954964587}
   - component: {fileID: 1954964588}
+  - component: {fileID: 1954964589}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -792,11 +793,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee838640100662444bd1a5a4366c771c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  rb: {fileID: 646016293}
   horizontalInput: 0
   forwardInput: 0
   speed: 5
   turnSpeed: 150
+--- !u!114 &1954964589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954964586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0a7fdfbdfd1d74fb39c46549865ec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 2056866440}
+  horizontalMin: -12
+  horizontalMax: 12
+  verticalMin: -8
+  verticalMax: 8
 --- !u!1001 &2056866439
 PrefabInstance:
   m_ObjectHideFlags: 0
