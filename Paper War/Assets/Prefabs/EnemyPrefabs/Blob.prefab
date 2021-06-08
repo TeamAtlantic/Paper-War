@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4899489585907298061}
   m_Layer: 0
   m_Name: blobsprite
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,6 +117,7 @@ GameObject:
   - component: {fileID: 4706465377171744153}
   - component: {fileID: 4706465377171744130}
   - component: {fileID: 4706465377171744131}
+  - component: {fileID: 8475978233826280995}
   m_Layer: 7
   m_Name: Blob
   m_TagString: Enemy
@@ -242,3 +243,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3dd34b4909d40943b4d822b88f40f23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8475978233826280995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4706465377171744152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeca8678cf174524da7bec5e3e6e6ee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHP: 1
+  hasDeathEffect: 1
+  DeathEffect: {fileID: 7592827884895542685, guid: fe5c167b1af064d438e5bedb179f4093, type: 3}

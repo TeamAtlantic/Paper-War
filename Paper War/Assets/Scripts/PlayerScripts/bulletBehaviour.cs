@@ -33,7 +33,12 @@ public class bulletBehaviour : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             Debug.Log("eita");
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+
+            other.GetComponent<EnemyHealth>().enemyHP -= 1;
+
+            Debug.Log(other.GetComponent<EnemyHealth>().enemyHP);
+
             Destroy(gameObject);
         }
 

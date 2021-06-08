@@ -23,7 +23,7 @@ public class EnemyBouncing : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.left * Time.deltaTime * bouncerSpeedX);
-        transform.Translate(Vector3.up * Time.deltaTime * bouncerSpeedY);
+        transform.Translate(Vector3.forward * Time.deltaTime * bouncerSpeedY);
 
         int horizontalMax = GameObject.Find("Player").GetComponent<PlayerLooping>().horizontalMax;
         int horizontalMin = GameObject.Find("Player").GetComponent<PlayerLooping>().horizontalMin;
