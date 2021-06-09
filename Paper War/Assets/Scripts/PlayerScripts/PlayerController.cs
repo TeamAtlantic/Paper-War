@@ -13,31 +13,24 @@ public class PlayerController : MonoBehaviour
     private float speed;
     private float turnSpeed;
 
-    float orientationControl = -1;
-
-    
-
-    // Start is called before the first frame update
     void Start()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
         speed = GameObject.Find("Player").GetComponent<PlayerVariables>().playerSpeed;
         turnSpeed = GameObject.Find("Player").GetComponent<PlayerVariables>().playerTurnSpeed;
-        
+    }
 
+
+    void Update()
+    {
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
 
-        transform.Translate(Vector3.right * Time.deltaTime * speed * forwardInput * orientationControl);
-        transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * horizontalInput);
-       
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
+        
+        if (forwardInput > 0)
+        {
+            transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * horizontalInput);
+        }       
     }
-
 
 }

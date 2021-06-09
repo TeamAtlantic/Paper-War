@@ -8,6 +8,9 @@ public class PlayerAction : MonoBehaviour
     public Transform firePoint;
 
     public float bulletForce = 25f;
+    public float fireRate = 0.2f;
+    private float nextFire = 0f;
+
     void Start()
     {
         
@@ -15,16 +18,20 @@ public class PlayerAction : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Shoot();
-        }
+        
+     Shoot();
+        
     }
 
     void Shoot()
     {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Rigidbody rb = bullet.GetComponent<Rigidbody>();
-        rb.AddForce(firePoint.right * bulletForce, ForceMode.Impulse);
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            Rigidbody rb = bullet.GetComponent<Rigidbody>();
+            rb.AddForce(firePoint.right * bulletForce, ForceMode.Impulse);
+        }
     }
 }
