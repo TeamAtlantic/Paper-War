@@ -7,8 +7,8 @@ public class PlayerController : MonoBehaviour
 
     public Rigidbody rb;
 
-    private float horizontalInput;
-    private float forwardInput;
+    public float horizontalInput;
+    public float forwardInput;
 
     private float speed;
     private float turnSpeed;
@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
+
 
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
         
