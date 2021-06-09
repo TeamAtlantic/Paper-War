@@ -8,6 +8,7 @@ public class UIGameOver : MonoBehaviour
 
     public GameObject deadMessage;
     public GameObject scoreMessage;
+    public GameObject pausebutton;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class UIGameOver : MonoBehaviour
         {
             deadMessage.SetActive(true);
             scoreMessage.SetActive(true);
+            pausebutton.GetComponent<Button>().enabled = false;
             Debug.Log("Endgame");
             Time.timeScale = 0;
         }
