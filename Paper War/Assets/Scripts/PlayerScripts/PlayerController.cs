@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 
     private float speed;
     private float turnSpeed;
+    private float noBackwards = 0;
 
     void Start()
     {
@@ -25,13 +26,16 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
 
+        //movement forward + no mov backwards
+        transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * horizontalInput);
 
-        transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-        
         if (forwardInput > 0)
+            {
+                transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
+            } else if (forwardInput == -1)
         {
-            transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * horizontalInput);
-        }       
-    }
-
+            Debug.Log("ta tendo re?");
+            transform.Translate(Vector3.forward * Time.deltaTime * forwardInput * noBackwards);
+        } 
+     }
 }
