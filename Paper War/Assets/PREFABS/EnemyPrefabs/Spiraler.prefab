@@ -1927,6 +1927,7 @@ GameObject:
   - component: {fileID: 5595286876662141184}
   - component: {fileID: 5595286876662141211}
   - component: {fileID: 5503801298160441358}
+  - component: {fileID: 1308892467}
   m_Layer: 7
   m_Name: SpiralerBrain
   m_TagString: Enemy
@@ -2078,6 +2079,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3dd34b4909d40943b4d822b88f40f23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1308892467
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5595286876662141210}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 84
+  m_CollisionDetection: 0
 --- !u!1 &5595286876784523173
 GameObject:
   m_ObjectHideFlags: 0
