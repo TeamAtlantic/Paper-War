@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 5254690141962660392}
   - component: {fileID: 5254690141962660395}
   - component: {fileID: 5356427181265573770}
+  - component: {fileID: 1713418606409186282}
   m_Layer: 7
   m_Name: BouncerSprite
   m_TagString: Enemy
@@ -224,3 +225,16 @@ MonoBehaviour:
   enemyHP: 4
   hasDeathEffect: 1
   DeathEffect: {fileID: 7592827884895542685, guid: fe5c167b1af064d438e5bedb179f4093, type: 3}
+--- !u!114 &1713418606409186282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5254690141962660398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d207c9440c9a48b44822a901bc8eac8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteChange: 0

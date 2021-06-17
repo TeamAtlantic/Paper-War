@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3067311882814647347}
   - component: {fileID: 6860289472140494244}
   - component: {fileID: 4899489585907298061}
+  - component: {fileID: 5402691391165521257}
   m_Layer: 0
   m_Name: blobsprite
   m_TagString: Enemy
@@ -102,6 +103,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5402691391165521257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3892204939913009940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d207c9440c9a48b44822a901bc8eac8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteChange: 0
 --- !u!1 &4706465377171744152
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,8 @@ public class EnemyKamikaze : MonoBehaviour
             //Destroy(gameObject);
 
             GameObject.Find("Player").GetComponent<PlayerVariables>().playerHealth -= 1;
+            GameObject.Find("playerModel").GetComponent<PlayerMaterialFlash>().whiteChange = true;
+
         }
     }
 }

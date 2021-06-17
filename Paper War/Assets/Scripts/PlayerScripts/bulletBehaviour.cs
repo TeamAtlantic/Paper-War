@@ -16,7 +16,7 @@ public class bulletBehaviour : MonoBehaviour
         if (transform.position.x > xRange || transform.position.x < -xRange || transform.position.z > zRange || transform.position.z < -zRange)
         {
             //Debug.Log("peloamor");
-            Destroy(gameObject);
+            Destroy(gameObject, .2f);
         }
     }
 
@@ -34,10 +34,19 @@ public class bulletBehaviour : MonoBehaviour
         {
             Debug.Log("eita");
             //Destroy(other.gameObject);
+            if (other.GetComponent<EnemyHealth>() != null)
+            {
 
-            other.GetComponent<EnemyHealth>().enemyHP -= 1;
+                other.GetComponent<EnemyHealth>().enemyHP -= 1;
 
-            Debug.Log(other.GetComponent<EnemyHealth>().enemyHP);
+                Debug.Log(other.GetComponent<EnemyHealth>().enemyHP);
+            }
+
+            if (other.GetComponentInChildren<FlashMaterial>() != null)
+            {
+                other.GetComponentInChildren<FlashMaterial>().whiteChange = true;
+                
+            }
 
             Destroy(gameObject);
         }
