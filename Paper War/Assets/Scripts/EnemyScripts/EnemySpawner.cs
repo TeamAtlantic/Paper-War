@@ -7,11 +7,13 @@ public class EnemySpawner : MonoBehaviour
 
     public float timerToAction;
     private float timerReset;
+    public float initialDelay;
 
     public GameObject enemyToSpawn;
 
-    private int enemyCounter;
-    public int enemyCounterRate;
+    public int enemyCounter;
+    private int spawnCounter;
+    public int spawnCounterRate;
     public float spawnRateShortner;
 
     public Transform[] placeToSpawn;
@@ -25,28 +27,37 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timerToAction -= Time.deltaTime;
-        Debug.Log(enemyCounter);
+        initialDelay -= Time.deltaTime;
 
-        if (timerToAction <= 0)
-        {
+            if (initialDelay <= 0)
+            {
 
-            int cleber = Random.Range(0, placeToSpawn.Length);
+                timerToAction -= Time.deltaTime;
+                Debug.Log(spawnCounter);
 
-            Instantiate(enemyToSpawn, placeToSpawn[cleber].position, Quaternion.identity);
-
-            timerToAction = timerReset;
-            enemyCounter += 1;
-
-            if (enemyCounter >= enemyCounterRate)
+                if (timerToAction <= 0)
                 {
 
-                enemyCounter = 0;
-                    if (timerReset > 2)
-                    {
-                        timerReset -= spawnRateShortner;
-                    }
+                    int cleber = Random.Range(0, placeToSpawn.Length);
+
+                    Instantiate(enemyToSpawn, placeToSpawn[cleber].position, Quaternion.identity);
+
+                    timerToAction = timerReset;
+                    spawnCounter += 1;
+                    enemyCounter += 1;
+
+                    if (spawnCounter >= spawnCounterRate)
+                        {
+
+                        spawnCounter = 0;
+                            if (timerReset > 2)
+                            {
+                                timerReset -= spawnRateShortner;
+                            }
+                        }
                 }
-        }
+
+            }
+
     }
 }

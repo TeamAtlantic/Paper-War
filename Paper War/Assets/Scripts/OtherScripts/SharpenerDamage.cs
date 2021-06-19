@@ -5,12 +5,24 @@ using UnityEngine;
 public class SharpenerDamage : MonoBehaviour
 {
 
-    public void OnTriggerStay(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if (other.name == "PencilDamagePart")
         {
             Debug.Log("DAMAGE");
+            other.GetComponentInParent<EnemyHealth>().enemyHP -= 100;
             //Destroy(other);
+
+            if (other.GetComponentInParent<FlashMaterial>() != null)
+            {
+                other.GetComponentInParent<FlashMaterial>().whiteChange = true;
+
+            }
         }
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        
     }
 }
