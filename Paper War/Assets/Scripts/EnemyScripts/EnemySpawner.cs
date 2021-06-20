@@ -10,6 +10,7 @@ public class EnemySpawner : MonoBehaviour
     public float initialDelay;
 
     public GameObject enemyToSpawn;
+    public GameObject dude;
 
     public int enemyCounter;
     private int spawnCounter;
@@ -40,7 +41,8 @@ public class EnemySpawner : MonoBehaviour
 
                     int cleber = Random.Range(0, placeToSpawn.Length);
 
-                    Instantiate(enemyToSpawn, placeToSpawn[cleber].position, Quaternion.identity);
+                    dude = Instantiate(enemyToSpawn, placeToSpawn[cleber].position, Quaternion.identity);
+                    dude.gameObject.name = enemyToSpawn.name;
 
                     timerToAction = timerReset;
                     spawnCounter += 1;
