@@ -9,7 +9,7 @@ public class EnemyKamikaze : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log(gameObject.name + " is dead!");
+            //Debug.Log(gameObject.name + " is dead!");
 
             gameObject.GetComponent<EnemyHealth>().enemyHP -= 1;
             //Destroy(gameObject);

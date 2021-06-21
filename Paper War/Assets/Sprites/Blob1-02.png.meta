@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: -6603167071395835708
     second: oneheart
+  - first:
+      213: 664353433431579316
+    second: Blob1-02_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -161,9 +164,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 547.75
+        y: 548
         width: 1668
-        height: 547.25
+        height: 547
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,6 +197,27 @@ TextureImporter:
       bones: []
       spriteID: 4c015ec9886dc54a0800000000000000
       internalID: -6603167071395835708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blob1-02_4
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 602
+        width: 448
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba10058de1483900800000000000000
+      internalID: 664353433431579316
       vertices: []
       indices: 
       edges: []

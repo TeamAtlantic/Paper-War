@@ -35,6 +35,6 @@ public class PlayerMaterialFlash : MonoBehaviour
     {
         sr.material = matDefault;
         whiteChange = false;
-        Debug.Log("Cleito");
+        //Debug.Log("Cleito");
     }
 }

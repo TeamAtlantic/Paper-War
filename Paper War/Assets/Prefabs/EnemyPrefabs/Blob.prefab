@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 4706465377171744130}
   - component: {fileID: 4706465377171744131}
   - component: {fileID: 8475978233826280995}
-  - component: {fileID: 1432514021569787813}
   m_Layer: 7
   m_Name: Blob
   m_TagString: Enemy
@@ -273,15 +272,3 @@ MonoBehaviour:
   enemyHP: 1
   hasDeathEffect: 1
   DeathEffect: {fileID: 7592827884895542685, guid: fe5c167b1af064d438e5bedb179f4093, type: 3}
---- !u!114 &1432514021569787813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4706465377171744152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9c76338ec7d1cd488fb938d2d9677ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
