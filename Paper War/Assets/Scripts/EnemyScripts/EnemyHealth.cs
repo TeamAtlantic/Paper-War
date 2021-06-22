@@ -10,6 +10,8 @@ public class EnemyHealth : MonoBehaviour
     public bool hasDeathEffect;
     public GameObject DeathEffect;
 
+    public int enemyPoints;
+
     // Update is called once per frame
     void Update()
     {
@@ -20,6 +22,7 @@ public class EnemyHealth : MonoBehaviour
                 Instantiate(DeathEffect, transform.position, transform.rotation);
             }
 
+            GameObject.Find("Canvas").GetComponent<UIScore>().enemyPoints += enemyPoints;
             Destroy(gameObject);
         }
     }

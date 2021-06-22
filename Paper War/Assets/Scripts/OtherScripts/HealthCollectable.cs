@@ -21,6 +21,7 @@ public class HealthCollectable : MonoBehaviour
             transform.Translate(Vector3.left * Time.deltaTime * bouncerSpeedX);
             transform.Translate(Vector3.forward * Time.deltaTime * bouncerSpeedY);
 
+
             int horizontalMax = GameObject.Find("Player").GetComponent<PlayerLooping>().horizontalMax;
             int horizontalMin = GameObject.Find("Player").GetComponent<PlayerLooping>().horizontalMin;
             int verticalMax = GameObject.Find("Player").GetComponent<PlayerLooping>().verticalMax;

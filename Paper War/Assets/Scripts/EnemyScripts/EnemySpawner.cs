@@ -9,8 +9,9 @@ public class EnemySpawner : MonoBehaviour
     private float timerReset;
     public float initialDelay;
 
-    public GameObject enemyToSpawn;
+    public GameObject[] enemyToSpawn;
     public GameObject dude;
+    public int[] level;
 
     public int enemyCounter;
     private int spawnCounter;
@@ -40,11 +41,27 @@ public class EnemySpawner : MonoBehaviour
                 {
 
                     int cleber = Random.Range(0, placeToSpawn.Length);
+                    if (enemyCounter < level[1])
+                    {
+                        dude = Instantiate(enemyToSpawn[0], placeToSpawn[cleber].position, Quaternion.identity);
+                        dude.gameObject.name = enemyToSpawn[0].name;
+                    }
 
-                    dude = Instantiate(enemyToSpawn, placeToSpawn[cleber].position, Quaternion.identity);
-                    dude.gameObject.name = enemyToSpawn.name;
+                    if ((enemyCounter >= level[1]) && (enemyCounter < level[2]))
+                    {
+                        dude = Instantiate(enemyToSpawn[1], placeToSpawn[cleber].position, Quaternion.identity);
+                        dude.gameObject.name = enemyToSpawn[1].name;
+                    }
 
-                    timerToAction = timerReset;
+                    if (enemyCounter >= level[2])
+                    {
+                        dude = Instantiate(enemyToSpawn[2], placeToSpawn[cleber].position, Quaternion.identity);
+                        dude.gameObject.name = enemyToSpawn[2].name;
+                    }
+
+
+
+                timerToAction = timerReset;
                     spawnCounter += 1;
                     enemyCounter += 1;
 
