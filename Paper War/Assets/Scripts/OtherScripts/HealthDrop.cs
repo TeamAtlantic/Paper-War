@@ -23,18 +23,25 @@ public class HealthDrop : MonoBehaviour
     void Update()
     {
 
-
-
         score = GameObject.Find("Canvas").GetComponent<UIScore>().totalPoints;
 
-        if (score == drop)
+        Debug.Log(score + " is the score");
+
+
+        if (score >= drop)
         {
             spawn = true;
+            Debug.Log(drop + " is the drop");
+
+        }
+
+        if (spawn == true)
+        {
             spawnHP();
         }
     }
 
-    void spawnHP()
+    public void spawnHP()
     {
         int horizontalMax = GameObject.Find("Player").GetComponent<PlayerLooping>().horizontalMax;
         int horizontalMin = GameObject.Find("Player").GetComponent<PlayerLooping>().horizontalMin;
