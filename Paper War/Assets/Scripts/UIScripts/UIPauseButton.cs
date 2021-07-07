@@ -38,5 +38,6 @@ public class UIPauseButton : MonoBehaviour
     public void PauseButton()
     {
         isPlaying *= -1;
+        FindObjectOfType<AudioManager>().Play("PauseSound");
     }
 }

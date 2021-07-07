@@ -28,6 +28,7 @@ public class PlayerMaterialFlash : MonoBehaviour
             sr.material = matWhite;
             Debug.Log(sr);
             Invoke("ResetMaterial", .1f);
+
         }
     }
 
