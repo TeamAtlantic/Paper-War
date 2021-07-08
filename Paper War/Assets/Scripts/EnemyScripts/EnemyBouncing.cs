@@ -17,6 +17,9 @@ public class EnemyBouncing : MonoBehaviour
 
         bouncerSpeedX = Random.Range(1, 5);
         bouncerSpeedY = Random.Range(4, 7);
+
+        FindObjectOfType<AudioManager>().Play("BouncerMoving");
+
     }
 
     // Update is called once per frame
@@ -30,24 +33,28 @@ public class EnemyBouncing : MonoBehaviour
         int verticalMax = GameObject.Find("Player").GetComponent<PlayerLooping>().verticalMax;
         int verticalMin = GameObject.Find("Player").GetComponent<PlayerLooping>().verticalMin;
 
+
         if (transform.position.x <= horizontalMin)
         {
             bouncerSpeedX *= -1;
+            FindObjectOfType<AudioManager>().Play("BouncerBouncing");
 
         }
         else if (transform.position.x >= horizontalMax)
         {
             bouncerSpeedX *= -1;
+            FindObjectOfType<AudioManager>().Play("BouncerBouncing");
         }
 
         if (transform.position.z <= verticalMin)
         {
             bouncerSpeedY *= -1;
-
+            FindObjectOfType<AudioManager>().Play("BouncerBouncing");
         }
         else if (transform.position.z >= verticalMax)
         {
             bouncerSpeedY *= -1;
+            FindObjectOfType<AudioManager>().Play("BouncerBouncing");
         }
     }
 
@@ -59,6 +66,8 @@ public class EnemyBouncing : MonoBehaviour
             bouncerSpeedX *= -1;
 
             bouncerHealth -= 1;
+            FindObjectOfType<AudioManager>().Play("Bouncer");
+
             if (bouncerHealth <= 0)
             {
                 Destroy(gameObject);

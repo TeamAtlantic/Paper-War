@@ -20,12 +20,17 @@ public class UIGameOver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         if (GameObject.Find("Player").GetComponent<PlayerVariables>().playerHealth <= 0)
         {
             deadMessage.SetActive(true);
             scoreMessage.SetActive(true);
             highscoreMessage.SetActive(true);
             pausebutton.GetComponent<Button>().enabled = false;
+
+
+
             Debug.Log("Endgame");
             Time.timeScale = 0;
         }

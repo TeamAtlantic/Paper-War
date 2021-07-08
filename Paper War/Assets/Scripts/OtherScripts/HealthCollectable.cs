@@ -27,6 +27,8 @@ public class HealthCollectable : MonoBehaviour
             int verticalMax = GameObject.Find("Player").GetComponent<PlayerLooping>().verticalMax;
             int verticalMin = GameObject.Find("Player").GetComponent<PlayerLooping>().verticalMin;
 
+            FindObjectOfType<AudioManager>().Play("Item");
+
             if (transform.position.x <= horizontalMin)
             {
                 bouncerSpeedX *= -1;
@@ -57,6 +59,7 @@ public class HealthCollectable : MonoBehaviour
                     if (collision.gameObject.GetComponentInParent<PlayerVariables>().playerHealth < 3)
                         {
                              GameObject.Find("Player").GetComponent<PlayerVariables>().playerHealth += 1;
+                             FindObjectOfType<AudioManager>().Play("ItemPickUp");
                         }
                     Destroy(gameObject);
                     //Debug.Log(GameObject.Find("Player").GetComponent<PlayerVariables>().playerHealth);

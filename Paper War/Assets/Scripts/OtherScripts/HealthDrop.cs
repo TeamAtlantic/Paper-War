@@ -53,6 +53,9 @@ public class HealthDrop : MonoBehaviour
         Instantiate(hp, new Vector3(horizontal, 4, vertical), Quaternion.Euler(Random.Range(0.0f, 360.0f), Random.Range(0.0f, 360.0f), Random.Range(0.0f, 360.0f)));
         Debug.Log(score);
         drop += reset;
+
+        FindObjectOfType<AudioManager>().Play("ItemSpawn");
+        
         spawn = false;
     }    
 }

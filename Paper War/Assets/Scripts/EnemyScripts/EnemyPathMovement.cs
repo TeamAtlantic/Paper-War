@@ -12,7 +12,8 @@ public class EnemyPathMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        current = 0;   
+        current = 0;
+        FindObjectOfType<AudioManager>().Play("PopSound");
     }
 
     // Update is called once per frame

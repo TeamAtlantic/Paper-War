@@ -38,6 +38,11 @@ public class bulletBehaviour : MonoBehaviour
             {
 
                 other.GetComponent<EnemyHealth>().enemyHP -= 1;
+                if (other.GetComponent<EnemyHealth>().enemyHP > 0)
+                {
+
+                    FindObjectOfType<AudioManager>().Play("DamageEnemy");
+                }
 
                 //Debug.Log(other.GetComponent<EnemyHealth>().enemyHP);
             }

@@ -35,10 +35,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        Play("Soundtrack");    
-    }
+
 
     public void Play (string name)
     {
